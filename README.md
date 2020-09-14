@@ -29,14 +29,30 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+The code needs to be set up with a few vital parts. Declare a Class, build Constructor (where state is set up), and Render needs to be called. A class component needs to extend the React BaseComponent. There needs to be a 'render()' method and at the bottom the component should return JSX. 
+
 
 2. Describe the different phases of the component lifecycle.
+There are three different component lifecycle phases. Mounting, Updating and unmounting. Mounting is where constuctor is built, render phase, where render is called and the "commit phase" where componentDidMount method can be called. In updating phase new props can be generated with "getDerivedStateFromProps", "setState()" and after render is called "componentDidUpdate" will run and Umounting is the death of the lifecyle(removed from the screen) with the "componentWillUnmount"
 
 3. Demonstrate an understanding of class component lifecycle methods.
+constructor
+render
+componentDidMount
+componentDidUpdate
+componentWillUnmount
+
+constructor()
+getDerivedStateFromProps()
+render()
+componentDidMount()
 
 4. Define stateful logic.
+Stateful logic is logic that's built into a component. Examples, a function that handles a click event or sets toggle state or formats data before it is displayed. Hooks are used to manage stateful logic NOn-visual behavior is also stateful logic with custom hooks.
 
 5. Describe how to test a React component with React Testing Library.
+Main framework "Arrange (set up code in a manner to be able to test), Act( call methods or functions that return results for the test), Assert(expected result should match what is returned" 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
