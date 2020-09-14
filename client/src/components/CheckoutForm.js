@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {useForm} from "../hooks/useForm";
 
 
@@ -80,7 +80,7 @@ const CheckoutForm = () => {
           Zip:
           <input name="zip" value={values.zip} onChange={handleChanges} />
         </label>
-        <button>Checkout</button>
+        <button data-testid="checkoutButton">Checkout</button>
       </form>
 
       {showSuccessMessage && (

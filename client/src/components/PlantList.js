@@ -17,7 +17,6 @@ constructor() {
     .then(res => {
       console.log("plantlist: cdm: res ", res);
       this.setState({plants: res.data.plantsData})
-      
     })
     .catch(err => {
       console.log('err', err)
